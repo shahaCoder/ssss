@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/wheather.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wrapper{
+    width: 700px;
+    height: 400px;
+    background-color: rgba(241, 235, 235, .7);
+    border-radius: 50px 5px 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // padding-left: 35px;
+    .wrapper-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        input{
+            width: 300px;
+            height: 35px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            padding-left: 10px;
+            outline: none;
+            margin-bottom: 15px;
+        }
+    
+        img{
+            position: absolute;
+            right: 150px;
+            top: 12px;
+        }
+    }
+
+    .box{
+        width: 90%;
+        height: 200px;
+        border: 1px solid rgba(45, 44, 44, .2);
+        margin-left: 5%;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .left-cont{
+            margin-bottom: 25px;
+            h2{
+                color: white;
+            }
+        }
+
+        .temp{
+            margin-left: 30px;
+        }
+
+        .right{
+            h2{
+                color: yellow;
+                font-size: 42px;
+            }
+        }
+    }
+
+}
+
+
+// @keyframes flicker {
+    
+//     0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+//         box-shadow:
+//         0 0 4px #fff,
+//         0 0 11px #fff,
+//         0 0 19px #fff,
+//         0 0 40px #0fa,
+//         0 0 80px #0fa,
+//         0 0 90px #0fa,
+//         0 0 100px #0fa,
+//         0 0 150px #0fa;
+    
+//     }
+    
+//     20%, 24%, 55% {        
+//         box-shadow: none;
+//     }    
+//   }
